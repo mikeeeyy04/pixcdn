@@ -22,7 +22,6 @@ function dragElement(elmnt) {
             e.preventDefault();
             pos3 = e.clientX;
             pos4 = e.clientY;
-            document.body.style.cursor = "grabbing";
             document.addEventListener('mouseup', closeDragElement);
             document.addEventListener('mousemove', elementDrag);
         }
