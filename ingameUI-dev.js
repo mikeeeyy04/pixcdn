@@ -61,30 +61,23 @@ const ShowUI = async () => {
   let div = document.createElement('div');
 
   div.innerHTML = /*html*/`
-    <div id="forgeConfig" style="background: rgba(255, 255, 255, 0.7);">
-      <h1>Configuration</h1>
+    <div id="forgeConfig" style="background: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h1 style="color: #333; font-size: 24px; margin-bottom: 16px;">Configuration</h1>
 
-      <div>
-        <input type="checkbox" id="longRange">
-        <label for="config1">Long range click</label><br>
+      <div style="margin-bottom: 16px;">
+        <input type="checkbox" id="longRange" style="margin-right: 8px;">
+        <label for="longRange" style="color: #333; font-size: 16px;">Long range click</label><br>
         
-        <input type="checkbox" id="easyTeleport">
-        <label for="config2">Easy teleport</label><br>
+        <input type="checkbox" id="easyTeleport" style="margin-right: 8px;">
+        <label for="easyTeleport" style="color: #333; font-size: 16px;">Easy teleport</label><br>
         
         <br>
-        <br>
-        <p style="font-size: 12px">The next options needs to be enabled before starting the game:</p>
-        <input type="checkbox" id="noCollision">
-        <label for="config3">No collisions <span style="font-size: 8px">(game reload required)</span></label><br>
+        <p style="font-size: 14px; color: #666;">Enable the following options before starting the game:</p>
+        <input type="checkbox" id="noCollision" style="margin-right: 8px;">
+        <label for="noCollision" style="color: #333; font-size: 16px;">No collisions <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
         
-        <input type="checkbox" id="speedHack">
-        <label for="config4">Speed Hack <span style="font-size: 8px">(game reload required)</span></label><br>
-        <!--
-        <div>
-          <input type="checkbox" id="autoChopTrees">
-          <label for="config5">Auto chop trees</label><br>
-        </div>
-        -->
+        <input type="checkbox" id="speedHack" style="margin-right: 8px;">
+        <label for="speedHack" style="color: #333; font-size: 16px;">Speed Hack <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
         
       </div>
         
